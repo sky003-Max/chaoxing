@@ -295,7 +295,7 @@ def server_chan_send(msg):
 	"""server酱将消息推送至微信"""
 	desp = ''
 	for d in msg:
-		desp += '|  **课程名**  |   {}   |\r| :----------: | :---------- |\r'.format(d['name'])
+		desp = '|  **课程名**  |   {}   |\r| :----------: | :---------- |\r'.format(d['name'])
 		desp += '| **签到时间** |   {}   |\r'.format(d['date'])
 		desp += '| **签到状态** |   {}   |\r'.format(d['status'])
 
